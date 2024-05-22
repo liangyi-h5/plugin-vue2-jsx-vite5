@@ -1,0 +1,66 @@
+{
+  "name": "plugin-vue2-jsx-vite5",
+  "version": "1.0.0",
+  "description": "Plug-in compatible with vite5 vue2 jsx syntax",
+  "main": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "vue2 vite5 support jsx plugin",
+    "vue2",
+    "vite5",
+    "jsx",
+    "jsx-plugin",
+    "plugin"
+  ],
+  "author": "Liangxian li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liangyi-h5/yi-infinite-loading-vue3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangyi-h5/yi-infinite-loading-vue3.git"
+  },
+  "homepage": "https://github.com/liangyi-h5/yi-infinite-loading-vue3.git",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "npm run build && cd demo && npm run dev",
+    "build:demo": "npm run build && cd demo && npm install && npm run build",
+    "pre-release": "git checkout main && git pull",
+    "branch-merge": "git push --tags && git push",
+    "release-patch": "npm run pre-release && npm version patch -m \"tag: Version updated to %s patch\" && npm run branch-merge",
+    "release-minor": "npm run pre-release && npm version minor -m \"tag: Version updated to %s minor\" && npm run branch-merge",
+    "release-major": "npm run pre-release && npm version major -m \"tag: Version updated to %s major\" && npm run branch-merge"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/lib/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@rollup/pluginutils": "^5.1.0",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.4.0",
+    "@vue/babel-plugin-transform-vue-jsx": "^1.4.0",
+    "@vue/babel-sugar-composition-api-inject-h": "^1.4.0",
+    "@vue/babel-sugar-composition-api-render-instance": "^1.4.0",
+    "@vue/babel-sugar-functional-vue": "^1.4.0",
+    "@vue/babel-sugar-inject-h": "^1.4.0",
+    "@vue/babel-sugar-v-model": "^1.4.0",
+    "@vue/babel-sugar-v-on": "^1.4.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.6.1"
+  }
+}
