@@ -16,13 +16,13 @@
   "author": "Liangxian li",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/liangyi-h5/yi-infinite-loading-vue3/issues"
+    "url": "https://github.com/liangyi-h5/plugin-vue2-jsx-vite5/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liangyi-h5/yi-infinite-loading-vue3.git"
+    "url": "git+https://github.com/liangyi-h5/plugin-vue2-jsx-vite5.git"
   },
-  "homepage": "https://github.com/liangyi-h5/yi-infinite-loading-vue3.git",
+  "homepage": "https://github.com/liangyi-h5/plugin-vue2-jsx-vite5",
   "scripts": {
     "build": "rollup -c",
     "dev": "npm run build && cd demo && npm run dev",
