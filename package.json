@@ -1,6 +1,6 @@
 {
   "name": "plugin-vue2-jsx-vite5",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plug-in compatible with vite5 vue2 jsx syntax",
   "main": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
