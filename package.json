@@ -58,7 +58,8 @@
     "@vue/babel-sugar-functional-vue": "^1.4.0",
     "@vue/babel-sugar-inject-h": "^1.4.0",
     "@vue/babel-sugar-v-model": "^1.4.0",
-    "@vue/babel-sugar-v-on": "^1.4.0"
+    "@vue/babel-sugar-v-on": "^1.4.0",
+    "vite": "^5.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
