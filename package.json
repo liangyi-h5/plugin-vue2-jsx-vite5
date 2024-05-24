@@ -49,6 +49,7 @@
   "dependencies": {
     "@babel/core": "^7.24.5",
     "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@babel/plugin-transform-typescript": "^7.24.5",
     "@rollup/pluginutils": "^5.1.0",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.4.0",
     "@vue/babel-plugin-transform-vue-jsx": "^1.4.0",
@@ -61,6 +62,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^4.6.1"
+    "rollup": "^4.6.1",
+    "rollup-plugin-copy": "^3.5.0"
   }
 }

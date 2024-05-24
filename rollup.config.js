@@ -2,6 +2,7 @@ import terser from '@rollup/plugin-terser'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { readFileSync } from 'fs'
+import copy from 'rollup-plugin-copy'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
@@ -33,4 +34,11 @@ export default {
 		}
 	],
 	sourcemap: true,
+	plugins: [
+		copy({
+			targets: [
+        { src: 'src/index.d.ts', dest: generateBuildPathUrl() },
+      ]
+		})
+	]
 }

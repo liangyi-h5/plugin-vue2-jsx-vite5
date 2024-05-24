@@ -1,12 +1,12 @@
 import { Plugin } from 'vite';
-import { VueJSXPresetOptions } from '@vue/babel-preset-jsx';
+// import { VueJSXPresetOptions } from '@vue/babel-preset-jsx';
 import { FilterPattern } from '@rollup/pluginutils';
 
 interface FilterOptions {
     include?: FilterPattern;
     exclude?: FilterPattern;
 }
-type Options = VueJSXPresetOptions & FilterOptions & {
+type Options = FilterOptions & {
     babelPlugins?: any[];
 };
 
