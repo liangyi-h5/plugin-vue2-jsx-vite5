@@ -1,5 +1,5 @@
 # plugin-vue2-jsx-vite5
-兼容 vite5 vue2 jsx 语法的插件
+兼容 vite5+ vue2 jsx 语法的插件
 
 vue version >= 2.7
 ## ⚠️
