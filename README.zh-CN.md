@@ -21,9 +21,7 @@ export default defineConfig({
   base: "/",
   plugins: [
     vue(),
-    vue2Jsx({
-      include: [/\.[jt]sx$/, /\.vue$/]
-    })
+    vue2Jsx()
   ]
 })
 
